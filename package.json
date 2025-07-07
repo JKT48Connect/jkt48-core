@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/j-forces/jkt48-core.git"
+    "url": "git+https://github.com/JKT48Connect/jkt48-core.git"
   },
   "bugs": {
-    "url": "https://github.com/j-forces/jkt48-core/issues"
+    "url": "https://github.com/JKT48Connect/jkt48-core/issues"
   },
-  "homepage": "https://github.com/j-forces/jkt48-core#readme"
+  "homepage": "https://github.com/JKT48Connect/jkt48-core#readme"
 }
