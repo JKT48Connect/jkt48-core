@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - 'v*'
-
+  workflow_dispatch:
+  # 👉 ini bikin bisa dijalankan manual lewat UI
 permissions:
   contents: read
   packages: write
