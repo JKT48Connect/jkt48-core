@@ -1,0 +1,31 @@
+{
+  "name": "@jkt48/core",
+  "version": "1.1.2",
+  "description": "API client for JKT48 data from v2.jkt48connect.my.id",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jkt48",
+    "api",
+    "idol",
+    "Valzyy",
+    "JKT48Connect",
+    "indonesia"
+  ],
+  "author": "Valzyy",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-forces/jkt48-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j-forces/jkt48-core/issues"
+  },
+  "homepage": "https://github.com/j-forces/jkt48-core#readme"
+}
