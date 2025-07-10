@@ -3,6 +3,11 @@
   "version": "1.1.2",
   "description": "API client for JKT48 data from v2.jkt48connect.my.id",
   "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
