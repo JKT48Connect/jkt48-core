@@ -1,3 +1,5 @@
+![1000476284](https://github.com/user-attachments/assets/5c8eaf63-ec30-447a-b7f6-fdc0dbec4532)
+
 # JKT48 CORE
 
 A Node.js module for accessing JKT48 data from the v2.jkt48connect.my.id API.
