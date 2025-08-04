@@ -2,7 +2,7 @@
  * Constants used throughout the JKT48 API client
  */
 
-const BASE_URL = 'https://v2.jkt48connect.my.id/api';
+const BASE_URL = 'https://v2.jkt48connect.com/api';
 
 const ENDPOINTS = {
   MEMBERS: '/jkt48/members',
