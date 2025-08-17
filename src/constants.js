@@ -24,6 +24,14 @@ const ENDPOINTS = {
   CHAT_STREAM: (username, slug) => `/jkt48/chat-stream?username=${encodeURIComponent(username)}&slug=${encodeURIComponent(slug)}`,
   CHAT_STREAM_SR: (roomId) => `/jkt48/chat-stream-sr?room_id=${encodeURIComponent(roomId)}`,
   CHECK: '/zenova/check',
+  VIDEO_CALL: (sesi = '', date = '', member = '') => {
+    let endpoint = `/jkt48/videocall`;
+    if (sesi) endpoint += `&sesi=${encodeURIComponent(sesi)}`;
+    if (date) endpoint += `&sesi=${encodeURIComponent(sesi)}`;
+    if (member) endpoint += `&member=${encodeURIComponent(member)}`;
+    return endpoint;
+  },
+  VIDEO_CALL_TODAY: '/jkt48/videocall/today',
   
   // Admin endpoints
   ADMIN_KEYS: '/admin/keys?username=vzy&password=vzy',
