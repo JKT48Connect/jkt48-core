@@ -29,7 +29,7 @@ const jkt48Api = {
   theaterDetail: require('./src/features/jkt48/theaterDetail'),
   
   videoCall: require('.src/features/jkt48/videoCall'),
-  videoCallToday: require('.src/features/jkt48/videoCallToday),
+  videoCallToday: require('.src/features/jkt48/videoCallToday'),
                           
   admin: require('./src/features/admin/admin'),
   
