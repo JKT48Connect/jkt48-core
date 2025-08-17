@@ -20,6 +20,8 @@ import newsDetail from './src/features/jkt48/newsDetail.js'
 
 import theater from './src/features/jkt48/theater.js'
 import theaterDetail from './src/features/jkt48/theaterDetail.js'
+import videoCall from './src/features/jkt48/videoCall.js'
+import videoCallToday from './src/features/jkt48/videoCallToday.js'
 
 import admin from './src/features/admin/admin.js'
 import database from './src/features/database/database.js'
@@ -45,6 +47,8 @@ const jkt48Api = {
   newsDetail,
   theater,
   theaterDetail,
+  videoCall,
+  videoCallToday,
   admin,
   database,
   check,
