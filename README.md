@@ -355,8 +355,7 @@ const getVC = await videoCall(apiKey);
 ### Video Call Today
 ```javascript
 // CommonJS
-const videoCallToday = await jkt48Api.videoCallToday
-(apiKey)
+const videoCallToday = await jkt48Api.videoCallToday(apiKey)
 //ESM
 import { videoCallToday } from '@jkt48/core';
 const getVCToday = await videoCallToday(apiKey);
