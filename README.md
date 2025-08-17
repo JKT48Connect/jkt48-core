@@ -336,7 +336,7 @@ const chatStreamSR = await jkt48Api.chatStreamSR(roomId, apiKey);
 import { chatStreamSR } from '@jkt48/core';
 const srChat = await chatStreamSR(roomId, apiKey);
 ```
-### Video call schedule
+### Video call schedule [NEW]
 
 ### Video Call
 ```javascript
