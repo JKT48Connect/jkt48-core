@@ -315,7 +315,7 @@ import { replay } from '@jkt48/core';
 const replayData = await replay(apiKey);
 ```
 
-### Chat Stream [NEW] 
+### Chat Stream  
 
 #### Get chat stream idn
 ```javascript
@@ -335,6 +335,31 @@ const chatStreamSR = await jkt48Api.chatStreamSR(roomId, apiKey);
 // ESM
 import { chatStreamSR } from '@jkt48/core';
 const srChat = await chatStreamSR(roomId, apiKey);
+```
+### Video call schedule
+
+### Video Call
+```javascript
+// CommonJS
+const videoCall = await jkt48Api.videoCall(apiKey) // no params
+const videoCall = await jkt48Api.videoCall(sesi, apiKey) // sesi params
+const videoCall = await jkt48Api.videoCall(date, apiKey) // date params
+const videoCAll = await jkt48Api.videoCall(member, apiKey) // member params
+const videoCAll = await jkt48Api.videoCall(sesi, date, member, apiKey) // combine params
+
+//ESM
+import { videoCall } from '@jkt48/core';
+const getVC = await videoCall(apiKey);
+```
+
+### Video Call Today
+```javascript
+// CommonJS
+const videoCallToday = await jkt48Api.videoCallToday
+(apiKey)
+//ESM
+import { videoCallToday } from '@jkt48/core';
+const getVCToday = await videoCallToday(apiKey);
 ```
 
 #### ApiKey Validation
