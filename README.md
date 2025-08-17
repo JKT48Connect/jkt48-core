@@ -49,7 +49,10 @@ This package provides easy access to JKT48 data through the following features:
 
 ### System
 - ApiKey Validation
-
+### Video call schedule
+- Video call
+- Video call today
+- 
 ## Module System Support
 
 This package supports both CommonJS and ES Modules (ESM):
