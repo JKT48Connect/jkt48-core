@@ -1,6 +1,6 @@
 {
   "name": "@jkt48/core",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "API client for JKT48 data from v2.jkt48connect.com",
   "main": "index.js",
   "module": "index.mjs",
