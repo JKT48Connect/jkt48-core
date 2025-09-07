@@ -5,19 +5,30 @@ const axios = require('axios');
 const { BASE_URL } = require('./constants');
 
 /**
- * Make HTTP request to JKT48 API
+ * Make HTTP request to JKT48 API with support for API key and priority token
  * 
  * @param {string} endpoint - API endpoint
- * @param {string} [apiKey] - Optional user's API key
+ * @param {Object} [options] - Request options
+ * @param {string} [options.apiKey] - Optional user's API key
+ * @param {string} [options.priorityToken] - Optional priority token
  * @returns {Promise<Object>} - API response
  */
-const makeRequest = async (endpoint, apiKey) => {
+const makeRequest = async (endpoint, options = {}) => {
   try {
+    const { apiKey, priorityToken } = options;
+    
+    // Build URL with API key if provided
     const url = apiKey
       ? `${BASE_URL}${endpoint}?apikey=${apiKey}`
       : `${BASE_URL}${endpoint}`;
 
-    const response = await axios.get(url);
+    // Build headers with priority token if provided
+    const headers = {};
+    if (priorityToken) {
+      headers['x-priority-token'] = priorityToken;
+    }
+
+    const response = await axios.get(url, { headers });
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -28,6 +39,18 @@ const makeRequest = async (endpoint, apiKey) => {
       throw new Error(`Error: ${error.message}`);
     }
   }
+};
+
+/**
+ * Make HTTP request to JKT48 API (legacy version for backward compatibility)
+ * 
+ * @param {string} endpoint - API endpoint
+ * @param {string} [apiKey] - Optional user's API key
+ * @returns {Promise<Object>} - API response
+ * @deprecated Use makeRequest with options object instead
+ */
+const makeRequestLegacy = async (endpoint, apiKey) => {
+  return makeRequest(endpoint, { apiKey });
 };
 
 /**
@@ -44,5 +67,6 @@ const validateParam = (paramName, paramValue) => {
 
 module.exports = {
   makeRequest,
+  makeRequestLegacy, // For backward compatibility
   validateParam
 };
